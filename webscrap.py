@@ -18,6 +18,7 @@ def main():
     for i in soup.find_all('a'):
         a_list.append(str(i.get('href')))
 #maybe
+#need to make it more automatic
     del a_list[0:17]
     del a_list[-3:]
     pprint.pprint(a_list)
